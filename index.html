@@ -64,18 +64,23 @@
 
     figure {
       margin: 0;
-      width: min(900px, calc((100vh - 230px) * 1.5));
+      height: 100%;
+      max-width: 100%;
+      max-height: 900px;
+      aspect-ratio: 3/2;
     }
 
     .frame {
+      height: 100%;
       border: 1px solid #111;
       padding: 14px;
+      box-sizing: border-box;
     }
 
     .frame img {
       display: block;
       width: 100%;
-      aspect-ratio: 3/2;
+      height: 100%;
       object-fit: cover;
       filter: grayscale(1);
     }
