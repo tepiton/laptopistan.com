@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>mellowtimesphere.com</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      height: 100dvh;
+      overflow: hidden;
+    }
+
+    body {
+      background: #fff;
+      color: #111;
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+      font-weight: 300;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      padding: 28px;
+    }
+
+    header, footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 24px;
+    }
+
+    header {
+      border-bottom: 1px solid #111;
+      padding-bottom: 10px;
+    }
+
+    footer {
+      border-top: 1px solid #111;
+      padding-top: 10px;
+    }
+
+    .lbl {
+      font-size: 11px;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    .dim {
+      color: #6b6b6b;
+    }
+
+    main {
+      display: grid;
+      place-items: center;
+      padding: 40px 0;
+      min-height: 0;
+      overflow: hidden;
+    }
+
+    figure {
+      margin: 0;
+      width: min(900px, calc((100vh - 230px) * 1.5));
+    }
+
+    .frame {
+      border: 1px solid #111;
+      padding: 14px;
+    }
+
+    .frame img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 3/2;
+      object-fit: cover;
+      filter: grayscale(1);
+    }
+
+    ::selection {
+      background: #ec3013;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="lbl">mellowtimesphere.com</div>
+    <div class="lbl dim">01 / 01</div>
+  </header>
+  <main>
+    <figure>
+      <div class="frame">
+        <img src="https://live.staticflickr.com/65535/51997995372_5ab2728bd4_k.jpg" alt="">
+      </div>
+    </figure>
+  </main>
+  <footer>
+    <div class="lbl dim">&copy; 2026</div>
+  </footer>
+</body>
+</html>
